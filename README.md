@@ -186,7 +186,7 @@ This is an architectural problem, not something parameter tuning can fix. In pro
 
 These three issues together match the observed "~5 s join + worst-case ~5 s black screen" pattern.
 
-Combining this with earlier findings: Dialpad's current SFU is essentially a "bare RTP forwarder" — no keyframe cache (→ slow join), no FEC/NACK repair (→ worst downlink behaviour), no simulcast layer selection (→ multi-party participants drag each other down). Every P0 item below shares the same prerequisite: an SFU capability upgrade.
+Combining this with earlier findings: Dialpad's current SFU is essentially a "bare RTP forwarder" — no keyframe cache (→ slow join), no FEC/NACK repair (→ worst downlink behaviour), no simulcast layer selection (→ multi-party participants drag each other down). Every P0 item below shares the same prerequisite: **an SFU capability upgrade**.
 
 ### 6.6 One-Liner Summary
 
@@ -196,7 +196,7 @@ Combining this with earlier findings: Dialpad's current SFU is essentially a "ba
 
 ---
 
-## 7. Recommended Improvements for Dialpad (Ranked by ROI)
+## 7. Recommended Improvements for Dialpad
 
 To close the gap with Zoom on downlink resilience, client and server must be changed together. Tweaking the client BWE alone can only fix the "stuck on the floor" problem.
 
@@ -330,4 +330,3 @@ The steady-state numbers and charts are driven by the `Network condition` column
 | `down100ms` / `down200ms` | Downlink added one-way delay (100 / 200 ms) |
 
 That is 1 baseline row plus 18 impaired conditions (4 + 4 loss, 3 + 3 cap, 2 + 2 delay).
-
