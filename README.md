@@ -330,3 +330,11 @@ The steady-state numbers and charts are driven by the `Network condition` column
 | `down100ms` / `down200ms` | Downlink added one-way delay (100 / 200 ms) |
 
 That is 1 baseline row plus 18 impaired conditions (4 + 4 loss, 3 + 3 cap, 2 + 2 delay).
+
+---
+
+## 10. PCAP downloads
+
+Full-session capture files used for the IO graphs in this repo (`dialpad_meeting.pcap`, `google_meet.pcap`, `zoom_workspace.pcap`) are available here:
+
+[PCAPs — Google Drive](https://drive.google.com/drive/folders/1swZrcjwim9Ac016OL-T-2uIP7N1RgEeM?usp=sharing)
